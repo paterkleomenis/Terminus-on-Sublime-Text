@@ -53,7 +53,7 @@ This repository provides instructions for setting up and using the Terminus plug
 
     ```
 
-   - Save the file as `Python_Terminus.sublime-build`.
+   - Save the file as `C_Terminus.sublime-build`.
 
 #### Python
 
@@ -80,7 +80,7 @@ This repository provides instructions for setting up and using the Terminus plug
     }
     ```
 
-   - Save the file as `C_Terminus.sublime-build`.
+   - Save the file as `Python_Terminus.sublime-build`.
 
 
 ### Running Code
