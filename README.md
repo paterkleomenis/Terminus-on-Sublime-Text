@@ -37,7 +37,7 @@ This repository provides instructions for setting up and using the Terminus plug
     {
     "target": "terminus_exec",
     "cancel": "terminus_cancel_build",
-    "shell_cmd": "gcc "${file}" -o "${file_path}/${file_base_name}" && "${file_path}/${file_base_name}"",
+    "shell_cmd": "gcc \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
     "working_dir": "${file_path}",
     "file_regex": "^(..[^:]):([0-9]+):?([0-9]+)?:? (.)$",
     "selector": "source.c",
@@ -46,11 +46,10 @@ This repository provides instructions for setting up and using the Terminus plug
             "name": "Run",
             "target": "terminus_exec",
             "cancel": "terminus_cancel_build",
-            "shell_cmd": "gcc "${file}" -o "${file_path}/${file_base_name}" && "${file_path}/${file_base_name}""
+            "shell_cmd": "gcc \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
         }
-      ]
-    } 
-
+     ]
+   }
     ```
 
    - Save the file as `C_Terminus.sublime-build`.
